@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <title>Document</title>
+</head>
+<body class="fondo">
+    <h2 class="text-center margin-bottom margin-top titulo">Administrador de Pacientes DentaLIK</h2>
+    <div class="contenedor contenido" id="contenido">
+        <div class="contenido__grid">
+            <form class="formulario" id="formulario">
+                <div class="formulario__campo">
+                    <label for="nombre" class="formulario__label">Nombre: </label>
+                    <input
+                        type="text"
+                        placeholder="Nombre del paciente"
+                        id="nombre"
+                        name="nombre"
+                        class="formulario__input"
+                    />
+                </div>
+
+                <div class="formulario__campo">
+                    <label for="apellido" class="formulario__label">Apellidos: </label>
+                    <input
+                        type="text"
+                        placeholder="Apellido del paciente"
+                        id="apellido"
+                        name="apellido"
+                        class="formulario__input"
+                    />
+                </div>
+
+                <div class="formulario__campo">
+                    <label for="telefono" class="formulario__label">Telefono: </label>
+                    <input
+                        type="tel"
+                        placeholder="Telefono del paciente"
+                        id="telefono"
+                        name="telefono"
+                        class="formulario__input"
+                    />
+                </div>
+
+                <div class="formulario__campo">
+                    <label for="fecha" class="formulario__label">Fecha: </label>
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        class="formulario__input"
+                    />
+                </div>
+
+                <div class="formulario__campo">
+                    <label for="hora" class="formulario__label">Hora: </label>
+                    <input
+                        type="time"
+                        id="hora"
+                        name="hora"
+                        class="formulario__input"
+                    />
+                </div>
+
+                <div class="formulario__campo">
+                    <label for="servicio" class="formulario__label">Servicio: </label>
+                    <input
+                        type="text"
+                        placeholder="Nombre del paciente"
+                        id="servicio"
+                        name="servicio"
+                        class="formulario__input"
+                    />
+                </div>
+                <div>
+                    <button type="submit" class="formulario__boton">Crear cita</button>
+                </div>
+            </form>
+            <div class="pacientes">
+                <h2 class="titulo-pacientes">Pacientes</h2>
+                <ul class="listado" id="listado" ></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
